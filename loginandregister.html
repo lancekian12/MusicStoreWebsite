@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a142172438.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="loginandregister.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Music Store Website</title>
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="musictorewebsite.html"><img src="image/newlogo2-removebg-preview.png"></a>
+        <div class="nav-links">
+            <ul>
+                <a href="musictorewebsite.html"><li style="color: #fff;">HOME</li></a>
+                <a href="musicstorewebsite2.html"><li style="color: #fff;">STORE</i></li></a>
+                <a href="tutorial.html"style="color: #fff;"><li>COURSE</li></a>
+                <a><li style="color: #fff;">ABOUT US</li></a>
+                <a href="shoppingcart.html"><li><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #fff;"></i></li></a>
+                <a href="loginandregister.html"><li><i class="fa-solid fa-user fa-2xl" style="color: #fff;"></i></li></a>
+            </ul>
+        </div>
+    </nav>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onClick="login()">Login</span>
+                            <span onClick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password?</a>
+                        </form>
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirm Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+</script>
+
+<section class="footer">
+    <div class="container">
+        <div class="row6">
+            <div class="foo r-col-1">
+                <h3 class="footer-h3">Download our app</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="image/play-store.png">
+                    <img src="image/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/newlogo2.jpg">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benifits of Music Accesible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="linebreak">
+        <p>Created by: Lance Kian F. Flores</p>
+    </div>
+</section>
+    
+</body>
+</html>

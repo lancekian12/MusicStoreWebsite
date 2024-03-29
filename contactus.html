@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <script src="https://kit.fontawesome.com/a142172438.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Music Store Website</title>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="musictorewebsite.html"><img src="image/newlogo2-removebg-preview.png"></a>
+        <div class="nav-links">
+            <ul>
+                <a href="musictorewebsite.html"><li style="color: #fff;">HOME</li></a>
+                <a href="musicstorewebsite2.html"><li style="color: #fff;">STORE</i></li></a>
+                <a href="tutorial.html"style="color: #fff;"><li>COURSE</li></a>
+                <a href="aboutus.html"><li style="color: #fff;">ABOUT US</li></a>
+                <a href="shoppingcart.html"><li><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #fff;"></i></li></a>
+                <a href="contactus.html"><li><i class="fa-solid fa-phone fa-2xl" style="color: #fff;"></i></li></a>
+            </ul>
+        </div>
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+
+<section class="location">
+    <div class="row">
+        <div class="contact-col">
+            <h1 style="text-align: center; margin-bottom: 20px; margin-right: 80px;"><i class="fa-solid fa-circle-info" style="padding-right: 10px;"></i>Information</h1>
+            <div>
+                <i class="fa solid fa-home"></i>
+                <span>
+                    <h5>Address</h5>
+                    <p style="color: #999;">28WV+R2R, Arellano St, Downtown District, <br> Dagupan,
+                        2400 Pangasinan</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa solid fa-envelope"></i>
+                <span>
+                    <h5>Email</h5>
+                    <p style="color: #999;">musicalinstrumentstore@gmail.com</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa solid fa-phone-volume"></i>
+                <span>
+                    <h5>Landline Number</h5>
+                    <p style="color: #999;">+123-456-789</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa solid fa-phone"></i>
+                <span>
+                    <h5>Contact</h5>
+                    <p style="color: #999;">+649477402202</p>
+                </span>
+            </div>
+            <div style="margin-top: 20px;">
+                <i class="fa-brands fa-facebook fa-2xl" style="color: blue; margin-right: 15px;"></i>
+                <i class="fa-brands fa-twitter fa-2xl" style="color: skyblue; margin-right: 15px;"></i>
+                <i class="fa-brands fa-instagram fa-2xl" style="color: red; margin-right: 15px;"></i>
+            </div>
+        </div>
+        <div style="margin-right: 100px;">
+            <h1 style="text-align: center; margin-bottom: 20px;"><i class="fa-solid fa-map-location-dot" style="padding-right: 10px;"></i>Location Map</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122699.33141164703!2d120.23472666374433!3d16.04710409999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339167fe6bba4d67%3A0xf54b516c2c5d10b6!2sPHINMA-University%20of%20Pangasinan!5e0!3m2!1sen!2sph!4v1682083534817!5m2!1sen!2sph" 
+            width="600" height="450" style="border:0; margin-right: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+        </div>
+        <div class="account-page">
+            <h1 style="text-align: center; margin-bottom: 20px; margin-right: 100px;"><i class="fa-solid fa-user" style="padding-right: 10px;"></i>Membership</h1>
+            <div class="form-container" style="margin-right: 115px;">
+                <div class="form-btn">
+                    <span onClick="login()">Login</span>
+                    <span onClick="register()">Register</span>
+                    <hr id="Indicator">
+                </div>
+
+                <form id="LoginForm">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="">Forgot password?</a>
+                </form>
+                <form id="RegForm">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+</script>
+
+<section class="footer">
+    <div class="container">
+        <div class="row6">
+            <div class="foo r-col-1">
+                <h3 class="footer-h3">Download our app</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="image/play-store.png">
+                    <img src="image/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/newlogo2.jpg">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benifits of Music Accesible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="linebreak">
+        <p>Created by: Group 1</p>
+    </div>
+</section>
